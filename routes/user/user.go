@@ -2,7 +2,7 @@ package user
 
 import (
 	"github.com/indigoid/auth0-golang-web-app/app"
-	templates ".."
+	templates "github.com/indigoid/auth0-golang-web-app/routes"
 	"net/http"
 )
 

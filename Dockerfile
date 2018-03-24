@@ -1,16 +1,12 @@
-FROM golang:1.8-alpine3.6
-
-# install git
-RUN apk --update add \
-	git openssl \
-	&& rm /var/cache/apk/*
-
-WORKDIR /go/src
-
-ADD . /go/src
-
+# build stage
+FROM golang:1.9 AS build
+WORKDIR /go/src/app
+COPY . .
 RUN go-wrapper download
+RUN go-wrapper install
 
-CMD ["go", "run", "main.go", "server.go"]
-
+# final container
+FROM gcr.io/distroless/base
+COPY --from=build /go/bin/app /
+ENTRYPOINT ["/app"]
 EXPOSE 3000
