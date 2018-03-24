@@ -1,7 +1,7 @@
 package home
 
 import (
-	templates ".."
+	templates "github.com/indigoid/auth0-golang-web-app/routes"
 	"html/template"
 	"net/http"
 	"os"

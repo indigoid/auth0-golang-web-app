@@ -1,0 +1,12 @@
+package: github.com/indigoid/auth0-golang-web-app
+import:
+- package: /Users/jslee/go/src/github.com/indigoid/auth0-golang-web-app
+- package: github.com/codegangsta/negroni
+  version: ^0.3.0
+- package: github.com/gorilla/mux
+  version: ^1.6.1
+- package: github.com/gorilla/sessions
+  version: ^1.1.0
+- package: github.com/joho/godotenv
+  version: ^1.2.0
+- package: golang.org/x/oauth2

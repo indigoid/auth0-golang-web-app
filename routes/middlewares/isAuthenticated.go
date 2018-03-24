@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"../../app"
+	"github.com/indigoid/auth0-golang-web-app/app"
 	"net/http"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	_ "crypto/sha512"
 	"encoding/json"
-	"../../app"
+	"github.com/indigoid/auth0-golang-web-app/app"
 	"golang.org/x/oauth2"
 	"net/http"
 	"os"

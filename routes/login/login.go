@@ -6,7 +6,7 @@ import (
 	"os"
 	"crypto/rand"
 	"encoding/base64"
-	"../../app"
+	"github.com/indigoid/auth0-golang-web-app/app"
 )
 
 func LoginHandler(w http.ResponseWriter, r *http.Request) {

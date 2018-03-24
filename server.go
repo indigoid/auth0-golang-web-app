@@ -1,12 +1,12 @@
 package main
 
 import (
-	"./routes/callback"
-	"./routes/home"
-	"./routes/middlewares"
-	"./routes/user"
-	"./routes/login"
-	"./routes/logout"
+	"github.com/indigoid/auth0-golang-web-app/routes/callback"
+	"github.com/indigoid/auth0-golang-web-app/routes/home"
+	"github.com/indigoid/auth0-golang-web-app/routes/middlewares"
+	"github.com/indigoid/auth0-golang-web-app/routes/user"
+	"github.com/indigoid/auth0-golang-web-app/routes/login"
+	"github.com/indigoid/auth0-golang-web-app/routes/logout"
 	"github.com/codegangsta/negroni"
 	"github.com/gorilla/mux"
 	"net/http"
